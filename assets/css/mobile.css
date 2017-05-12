@@ -1,0 +1,17 @@
+body {
+    background-color: black;
+}
+
+@media handheld (min-width:0px) and (max-width:480px){
+    nav {
+        display: none;
+    }
+    #hamburguesa {
+        display: inline-block;
+    }
+    
+    #embroidery {
+        display: none;
+    }
+}
+    
