@@ -12,9 +12,19 @@ html, body, .container {
     display: flex;
 }
 
+header {
+    height: 5em;
+    
+}
 nav {
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
+}
+
+nav button {
+    width: 15%;
+    padding: 1em;
+    background-color: #fff;
 }
 
 #home {
