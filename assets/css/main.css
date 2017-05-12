@@ -1,3 +1,4 @@
+/* Parámetros generales */
 * {
     margin: 0;
     padding: 0;
@@ -21,30 +22,32 @@ body,
     flex-direction: column;
 }
 
+
+/* CABECERA */
 header {
     height: 6em;
     align-items: center;
     justify-content: center;
-    background-color: #6f6f6f;
-}
-
-#hamburguesa {
-    display: none;
+    background-color: #35374d;
+    position: fixed;
+    color: #fff;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-family: sans-serif;
 }
 
 nav {
-    justify-content: center;
+    justify-content: flex-end;
     align-items: center;
 }
 
 nav a {
-    width: 15%;
-    color: #4d4d4d;
+    width: 10%;
+    color: #fff;
+    font-size: 1.5vw;
     text-decoration: none;
     text-align: center;
-    padding: 1em;
-    background-color: #fff;
-    border: .02em solid #b7b7b7;
+    padding: 2.5em 1em;
 }
 
 nav a:hover {
@@ -52,12 +55,19 @@ nav a:hover {
     color: #fff;
 }
 
+/* menu para mobil */
+.menu-mobil {
+    display: none;
+}
+
+
+/*SECCION HOME*/
 #home {
     background-image: url(../imgs/cg-home.jpg);
     background-size: cover;
     justify-content: center;
     align-items: center;
-    padding: 10% 0;
+    padding: 18% 0 10%;
 }
 
 #home h1 {
@@ -78,7 +88,7 @@ h2 {
 #about,
 #contact {
     align-items: center;
-    padding: 4em 0;
+    padding: 10em 0 4em;
 }
 
 #embroidery div {
@@ -134,27 +144,40 @@ form button {
     margin-left: 40%;
     padding: .8em 2em;
     background-color: #d6d6d6;
-    border: 0;
-    
+    border: 0;    
+}
+
+form button:hover {
+    background-color: #35374d;
+    color: white;
 }
 
 footer {
     justify-content: center;
-    background-color: #434343;
+    background-color: #696969;
     color: #fff;
+    
     padding: 2em 0;
 }
 
+/*Parámetros versión mobil*/
 @media (min-width:0px) and (max-width:480px){
     #menu {
         display: none;
     }
     header {
-        justify-content: flex-end;
+        justify-content: space-between;
     }
-    #hamburguesa {
+    .menu-mobil {
         display: inherit;
         margin-right: 5%;
+    }
+    
+    h1 {
+        font-size: 2.5em;
+    }
+    h2 {
+        font-size: 1.7em;
     }
     
     #embroidery {
