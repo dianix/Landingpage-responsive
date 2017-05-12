@@ -3,13 +3,14 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" conent="width=device-width, initial-scale=1.0" />
     <title>Chloe Giordano</title>
+    <link rel="shortcut icon" type="image/x-icon" href="assets/imgs/icon-01.png">
     <link rel="stylesheet" href="assets/css/main.css" />
 </head>
 
 <body>
-    <header>
+    <header class="container">
         <nav class="container">
             <button>Home</button>
             <button>Embroidery</button>
@@ -18,36 +19,46 @@
             <button>Contact</button>
         </nav>
     </header>
+
     <section id="home" class="container">
         <h1>CHLOE GIORDANO</h1>
     </section>
-    <section id="info" class="container">
+
+    <section id="embroidery" class="container column">
         <h2>Embroidery</h2>
         <div class="container">
             <img src="assets/imgs/cg02.jpg" />
-            <p></p>
+            <p>
+                Oxford based artist Chloe Giordano’s elegantly detailed work combines illustration and freehand embroidery. Using a simple repetitive stitch, embroidery thread and calico Chloe developed her technique at the end of her degree at the University of the West of England. Alongside her brightly coloured miniature animals she also creates larger 3D soft sculptures.
+            </p>
         </div>
         <div class="container">
-            <p></p>
+            <p>
+                Muy lejos, más allá de las montañas de palabras, alejados de los países de las vocales y las consonantes, viven los textos simulados. Viven aislados en casas de letras, en la costa de la semántica, un gran océano de lenguas. Un riachuelo llamado Pons fluye por su pueblo y los abastece con las normas necesarias.
+            </p>
             <img src="assets/imgs/cg01.jpg" />
         </div>
     </section>
-    <section id="video" class="container">
+    
+    <section id="video" class="container column">
         <h2>About</h2>
         <div class="container">
             <iframe width="560" height="315" src="https://www.youtube.com/embed/PAD_9ZeJBEY" frameborder="0" allowfullscreen></iframe>
         </div>
     </section>
-    <section id="about" class="container">
-        <form action="" class="container">
-            <input type="text">
-            <input type="text">
-            <textarea name="" id="" cols="30" rows="10"></textarea>
+    
+    <section id="contact" class="container column">
+       <h2>Contact</h2>
+        <form class="container column">
+            <input type="text" placeholder="Nombre">
+            <input type="text" placeholder="Correo electrónico">
+            <textarea placeholder="Mensaje" rows="10"></textarea>
             <button>Send</button>
         </form>
     </section>
+    
     <footer class="container">
-        <p>Copyright 2017.</p>
+        <p>chicasDelCoro Copyright 2017.</p>
     </footer>
 
 </body>
