@@ -22,9 +22,14 @@ body,
 }
 
 header {
-    height: 5em;
+    height: 6em;
     align-items: center;
+    justify-content: center;
     background-color: #6f6f6f;
+}
+
+#hamburguesa {
+    display: none;
 }
 
 nav {
@@ -32,14 +37,17 @@ nav {
     align-items: center;
 }
 
-nav button {
+nav a {
     width: 15%;
+    color: #4d4d4d;
+    text-decoration: none;
+    text-align: center;
     padding: 1em;
     background-color: #fff;
     border: .02em solid #b7b7b7;
 }
 
-nav button:hover {
+nav a:hover {
     background-color: #b7b7b7;
     color: #fff;
 }
@@ -53,15 +61,16 @@ nav button:hover {
 }
 
 #home h1 {
-    font-size: 3em;
+    font-size: 5vw;
     text-align: center;
     color: #fff;
     text-shadow: .05em .04em rgba(34, 52, 77, 0.80), .07em .04em rgba(34, 52, 77, 0.60), .09em .04em rgba(34, 52, 77, 0.40);
 }
 
 h2 {
-    font-size: 2em;
+    font-size: 3vw;
     margin-bottom: 1.5em;
+    font-family: sans-serif;
 }
 
 #embroidery,
@@ -69,7 +78,7 @@ h2 {
 #about,
 #contact {
     align-items: center;
-    padding: 2em 0;
+    padding: 4em 0;
 }
 
 #embroidery div {
@@ -85,10 +94,17 @@ h2 {
 
 #video {
     background-color: #a0a0a0;
+    color: #fff;
 }
 
 #video div {
     justify-content: center;
+    width: 60%;
+    padding-bottom: 10%;
+}
+
+iframe {
+    width: 100%;
 }
 
 #about {
@@ -111,13 +127,12 @@ form textarea {
     margin: 1em 0;
     border: .1em solid #d6d6d6;
     padding: 1em;
-    color: #d1d1d1;
     font-size: 1em;
 }
 
 form button {
-    margin-left: 46em;
-    padding: .5em 1em;
+    margin-left: 40%;
+    padding: .8em 2em;
     background-color: #d6d6d6;
     border: 0;
     
@@ -129,3 +144,27 @@ footer {
     color: #fff;
     padding: 2em 0;
 }
+
+@media (min-width:0px) and (max-width:480px){
+    #menu {
+        display: none;
+    }
+    header {
+        justify-content: flex-end;
+    }
+    #hamburguesa {
+        display: inherit;
+        margin-right: 5%;
+    }
+    
+    #embroidery {
+        display: none;
+    }
+    #video {
+        background-color: #fff;
+    }
+    #contact {
+        background-color: #a0a0a0;
+    }
+}
+    
