@@ -1,4 +1,5 @@
 /* Parámetros generales */
+
 * {
     margin: 0;
     padding: 0;
@@ -22,10 +23,19 @@ body,
     flex-direction: column;
 }
 
+#embroidery,
+#video,
+#about,
+#contact {
+    align-items: center;
+    padding: 10em 0 4em;
+}
+
 
 /* CABECERA */
+
 header {
-    height: 6em;
+    height: 5em;
     align-items: center;
     justify-content: center;
     background-color: #35374d;
@@ -44,10 +54,9 @@ nav {
 nav a {
     width: 10%;
     color: #fff;
-    font-size: 1.5vw;
     text-decoration: none;
     text-align: center;
-    padding: 2.5em 1em;
+    padding: 2em 1em;
 }
 
 nav a:hover {
@@ -55,13 +64,17 @@ nav a:hover {
     color: #fff;
 }
 
-/* menu para mobil */
+
+/* menu para mobil oculto */
+
 .menu-mobil {
     display: none;
+    margin: 0 5%;
 }
 
 
-/*SECCION HOME*/
+/* SECCION HOME */
+
 #home {
     background-image: url(../imgs/cg-home.jpg);
     background-size: cover;
@@ -71,25 +84,21 @@ nav a:hover {
 }
 
 #home h1 {
-    font-size: 5vw;
+    font-size: 4em;
     text-align: center;
     color: #fff;
     text-shadow: .05em .04em rgba(34, 52, 77, 0.80), .07em .04em rgba(34, 52, 77, 0.60), .09em .04em rgba(34, 52, 77, 0.40);
 }
 
 h2 {
-    font-size: 3vw;
+    font-size: 2.5em;
     margin-bottom: 1.5em;
     font-family: sans-serif;
+    color: #656565;
 }
 
-#embroidery,
-#video,
-#about,
-#contact {
-    align-items: center;
-    padding: 10em 0 4em;
-}
+
+/* SECCION EMBROIDERY */
 
 #embroidery div {
     justify-content: space-around;
@@ -101,6 +110,9 @@ h2 {
 #embroidery div p {
     width: 40%;
 }
+
+
+/* SECCION VIDEO */
 
 #video {
     background-color: #a0a0a0;
@@ -117,9 +129,15 @@ iframe {
     width: 100%;
 }
 
+
+/* SECCION ABOUT */
+
 #about {
     justify-content: center;
 }
+
+
+/* SECCION CONTACT */
 
 #contact {
     width: 100%;
@@ -144,7 +162,7 @@ form button {
     margin-left: 40%;
     padding: .8em 2em;
     background-color: #d6d6d6;
-    border: 0;    
+    border: 0;
 }
 
 form button:hover {
@@ -152,16 +170,20 @@ form button:hover {
     color: white;
 }
 
+
+/* PIE DE PAGINA */
+
 footer {
     justify-content: center;
     background-color: #696969;
     color: #fff;
-    
     padding: 2em 0;
 }
 
-/*Parámetros versión mobil*/
-@media (min-width:0px) and (max-width:480px){
+
+/*Parámetros versión mobil VISIBLE*/
+
+@media (min-width:0px) and (max-width:480px) {
     #menu {
         display: none;
     }
@@ -169,17 +191,16 @@ footer {
         justify-content: space-between;
     }
     .menu-mobil {
-        display: inherit;
+        display: inline-block;
         margin-right: 5%;
     }
-    
     h1 {
-        font-size: 2.5em;
+        font-size: 2em;
+        color: aqua;
     }
     h2 {
-        font-size: 1.7em;
+        font-size: 1.5em;
     }
-    
     #embroidery {
         display: none;
     }
@@ -190,4 +211,3 @@ footer {
         background-color: #a0a0a0;
     }
 }
-    
